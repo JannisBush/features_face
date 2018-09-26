@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/asselbor/catkin_ws/src/features_face/OpenFace/build/devel:$CMAKE_PREFIX_PATH"
-export PATH="/bin:/home/asselbor/catkin_ws/install/bin:/opt/ros/kinetic/bin:/home/asselbor/bin:/home/asselbor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/asselbor/dev/android-studio/bin:/usr/local/java/jdk1.8.0_101/bin:/usr/local/MATLAB/R2016a/bin"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/asselbor/catkin_ws/src/features_face/OpenFace/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/asselbor/catkin_ws/src/features_face/OpenFace:/home/asselbor/catkin_ws/src:/opt/ros/kinetic/share"
+export CMAKE_PREFIX_PATH="/home/jar78/catkin_ws/src/features_face/OpenFace/build/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/jar78/catkin_ws/src/features_face/OpenFace/build/devel/lib:$LD_LIBRARY_PATH"
+export PYTHONPATH="/home/jar78/catkin_ws/src/features_face/OpenFace/build/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/jar78/catkin_ws/src/features_face/OpenFace/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/jar78/catkin_ws/src/features_face/OpenFace:$ROS_PACKAGE_PATH"

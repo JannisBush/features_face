@@ -152,3 +152,4 @@ add_subdirectory(lib/local/LandmarkDetector)
 add_subdirectory(lib/local/FaceAnalyser)
 # executables
 add_subdirectory(exe/FeatureExtraction)
+add_subdirectory(exe/OpenFaceROS)

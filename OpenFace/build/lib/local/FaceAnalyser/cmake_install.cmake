@@ -1,4 +1,4 @@
-# Install script for directory: /home/asselbor/catkin_ws/src/features_face/OpenFace/lib/local/FaceAnalyser
+# Install script for directory: /home/jar78/catkin_ws/src/features_face/OpenFace/lib/local/FaceAnalyser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libFaceAnalyser.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "/home/asselbor/catkin_ws/src/features_face/OpenFace/build/lib/local/FaceAnalyser/libFaceAnalyser.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "/home/jar78/catkin_ws/src/features_face/OpenFace/build/lib/local/FaceAnalyser/libFaceAnalyser.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libFaceAnalyser.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libFaceAnalyser.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -49,6 +49,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/asselbor/catkin_ws/src/features_face/OpenFace/lib/local/FaceAnalyser/HEADERS")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/jar78/catkin_ws/src/features_face/OpenFace/lib/local/FaceAnalyser/HEADERS")
 endif()
 

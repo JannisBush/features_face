@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -msse -msse2 -msse3 -DDLIB_PNG_SUPPORT -DDLIB_JPEG_SUPPO
 
 CXX_DEFINES = -DDLIB_HAVE_SSE2 -DDLIB_HAVE_SSE3 -DDLIB_HAVE_SSE41
 
-CXX_INCLUDES = -I/opt/ros/kinetic/include/opencv-3.1.0-dev/opencv -I/opt/ros/kinetic/include/opencv-3.1.0-dev -I/usr/include/boost -I/home/asselbor/catkin_ws/src/features_face/OpenFace/lib/3rdParty/dlib/include -I/usr 
+CXX_INCLUDES = -I/opt/ros/kinetic/include/opencv-3.3.1-dev -I/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv -I/usr/include/boost -I/home/jar78/catkin_ws/src/features_face/OpenFace/lib/3rdParty/dlib/include -I/usr 
 

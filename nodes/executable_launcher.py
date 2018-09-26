@@ -11,7 +11,9 @@ if __name__ == '__main__':
 
 	# get current open face face
 	path = rospy.get_param('~pathOpenFace')
+
 	path += '/build/bin/FeatureExtraction' 
+
 	#path += ' -rigid -verbose -f "/home/asselbor/outputMemory/adriana_5/outputVideo_2016-09-27 14:35:20.avi" -of "output_features/default.txt" -simalign output_features/aligned'
 
 	os.system(path)

@@ -1,11 +1,11 @@
 <launch>
 
-    <node pkg="features_face" type="executable_launcher.py" name="executable_launcher">
-  		<param name="pathOpenFace" value="/home/asselbor/catkin_ws/src/features_face/OpenFace" /> 
+    <node pkg="features_face" type="executable_launcher.py" name="executable_launcher" required="true">
+  		<param name="pathOpenFace" value="$(find features_face)/OpenFace" /> 
     </node>
 
 
-	<node pkg="features_face" type="detect_gaze_match.py" name="detect_gaze_match">
+	<node pkg="features_face" type="detect_gaze_match.py" name="detect_gaze_match" required="true">
 	  	
 	  	<param name="positionX1_r1" value="0.3" />
 		<param name="positionX2_r1" value="0.7" />

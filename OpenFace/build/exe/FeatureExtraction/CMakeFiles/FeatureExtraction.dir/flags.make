@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -msse -msse2 -msse3 -DDLIB_PNG_SUPPORT -DDLIB_JPEG_SUPPO
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"OpenFace\"
 
-CXX_INCLUDES = -isystem /opt/ros/kinetic/include/opencv-3.1.0-dev/opencv -isystem /opt/ros/kinetic/include/opencv-3.1.0-dev -I/usr/include/boost -I/home/asselbor/catkin_ws/src/features_face/OpenFace/lib/3rdParty/dlib/include -I/opt/ros/kinetic/include -I/include -I/home/asselbor/catkin_ws/src/features_face/OpenFace/exe/FeatureExtraction/../../lib/local/LandmarkDetector/include -I/home/asselbor/catkin_ws/src/features_face/OpenFace/exe/FeatureExtraction/../../lib/local/FaceAnalyser/include 
+CXX_INCLUDES = -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv -I/usr/include/boost -I/home/jar78/catkin_ws/src/features_face/OpenFace/lib/3rdParty/dlib/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/include -I/home/jar78/catkin_ws/src/features_face/OpenFace/exe/FeatureExtraction/../../lib/local/LandmarkDetector/include -I/home/jar78/catkin_ws/src/features_face/OpenFace/exe/FeatureExtraction/../../lib/local/FaceAnalyser/include 
 

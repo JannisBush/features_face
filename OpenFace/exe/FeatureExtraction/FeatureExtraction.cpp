@@ -181,6 +181,7 @@ void outputAllFeatures(std::ofstream* output_file, bool output_2D_landmarks, boo
 
 int main (int argc, char **argv)
 {
+
 	// create ros node + topic
 	ros::init(argc, argv, "features_extractor");
 	ros::NodeHandle n;
@@ -198,6 +199,8 @@ int main (int argc, char **argv)
 	
 
 	LandmarkDetector::FaceModelParameters det_parameters(arguments);
+	INFO_STREAM(det_parameters.model_location);
+
 	// Always track gaze in feature extraction
 	det_parameters.track_gaze = true;
 
@@ -239,6 +242,8 @@ int main (int argc, char **argv)
 
 	// The modules that are being used for tracking
 	LandmarkDetector::CLNF face_model(det_parameters.model_location);	
+
+	INFO_STREAM(det_parameters.model_location);
 
 	vector<string> output_similarity_align;
 	vector<string> output_hog_align_files;
