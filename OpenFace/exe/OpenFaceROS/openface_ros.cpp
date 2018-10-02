@@ -146,18 +146,18 @@ namespace openface_ros
       NodeHandle pnh("~");
       if(!pnh.getParam("image_topic", image_topic_)) throw invalid_argument("Expected ~image_topic parameter");
       
-      //const auto base_path = package::getPath("openface_ros");
+      const auto base_path = package::getPath("features_face") + "/OpenFace/build/bin";
       //const auto base_path = "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin";
       
-      //pnh.param<string>("clnf_model_path", clnf_model_path_, base_path + "/" + model_params_.model_location);
-      //pnh.param<string>("tri_model_path", tri_model_path_, base_path + "/model/tris_68_full.txt");
-      //pnh.param<string>("au_model_path", au_model_path_, base_path + "/model/AU_predictors/AU_all_best.txt");
-      //pnh.param<string>("haar_model_path", haar_model_path_, base_path + "/model/classifiers/haarcascade_frontalface_alt.xml");
+      pnh.param<string>("clnf_model_path", clnf_model_path_, base_path + "/model/main_clnf_general.txt");
+      pnh.param<string>("tri_model_path", tri_model_path_, base_path + "/model/tris_68_full.txt");
+      pnh.param<string>("au_model_path", au_model_path_, base_path + "/AU_predictors/AU_all_best.txt");
+      pnh.param<string>("haar_model_path", haar_model_path_, base_path + "/classifiers/haarcascade_frontalface_alt.xml");
 
-      pnh.param<string>("clnf_model_path", clnf_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/model/main_clnf_general.txt");
-      pnh.param<string>("tri_model_path", tri_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/model/tris_68_full.txt");
-      pnh.param<string>("au_model_path", au_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/AU_predictors/AU_all_best.txt");
-      pnh.param<string>("haar_model_path", haar_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/classifiers/haarcascade_frontalface_alt.xml");      
+      //pnh.param<string>("clnf_model_path", clnf_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/model/main_clnf_general.txt");
+      //pnh.param<string>("tri_model_path", tri_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/model/tris_68_full.txt");
+      //pnh.param<string>("au_model_path", au_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/AU_predictors/AU_all_best.txt");
+      //pnh.param<string>("haar_model_path", haar_model_path_, "/home/jar78/catkin_ws/src/features_face/OpenFace/build/bin/classifiers/haarcascade_frontalface_alt.xml");      
      
       pnh.param<bool>("publish_viz", publish_viz_, false);
 
