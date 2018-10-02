@@ -1,0 +1,10 @@
+<launch>
+
+    <node pkg="features_face" type="executable_launcher_op.py" name="executable_launcher_op" required="true">
+  		<param name="pathOpenFace" value="$(find features_face)/OpenFace" /> 
+  		<param name="image_topic" value="/image" />
+  		<param name="viz" value="True" />
+    </node>
+
+
+</launch>

@@ -1,0 +1,2 @@
+set(OpenFace_MESSAGE_FILES "/home/jar78/catkin_ws/src/features_face/OpenFace/exe/OpenFaceROS/msg/ActionUnit.msg;/home/jar78/catkin_ws/src/features_face/OpenFace/exe/OpenFaceROS/msg/Face.msg;/home/jar78/catkin_ws/src/features_face/OpenFace/exe/OpenFaceROS/msg/Faces.msg")
+set(OpenFace_SERVICE_FILES "")
